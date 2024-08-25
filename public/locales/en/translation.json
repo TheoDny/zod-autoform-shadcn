@@ -10,7 +10,10 @@
         "email_required": "Email is required",
         "favoriteColor_required": "Favorite color is required",
         "quality_min_required": "At least one quality is required",
-        "quality_required": "Quality is required"
+        "quality_required": "Quality is required",
+        "sport_required": "Sport is required",
+        "rank_required": "Rank is required",
+        "position_required": "Position is required"
     },
     "color": {
         "red": "Red",

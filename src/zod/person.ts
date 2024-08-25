@@ -72,32 +72,6 @@ const usePersonSchema = () => {
         })
         .refine(
             (data) => {
-                // If sport is "VolleyBall" or "BasketBall", position must be provided
-                if (SportsWithPosition.includes(data.sport)) {
-                    return data.position !== undefined
-                }
-                return true // No additional validation needed
-            },
-            {
-                message: t("validation.position_required"),
-                path: ["position"],
-            },
-        )
-        .refine(
-            (data) => {
-                // If sport is "Tennis", rank must be provided
-                if (SportsWithRank.includes(data.sport)) {
-                    return data.rank !== undefined
-                }
-                return true // No additional validation needed
-            },
-            {
-                message: t("validation.rank_required"),
-                path: ["rank"],
-            },
-        )
-        .refine(
-            (data) => {
                 // Validate the presence of `position` if sport requires it
                 if (SportsWithPosition.includes(data.sport) && !data.position) {
                     return { valid: false, path: ["position"], message: t("validation.position_required") }
