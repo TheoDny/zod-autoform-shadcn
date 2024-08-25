@@ -26,5 +26,18 @@
         "white": "Blanc",
         "cyan": "Cyan",
         "magenta": "Magenta"
-    }
+    },
+    "firstname": "Prénom",
+    "lastname": "Nom",
+    "birthday": "Date de naissance",
+    "gender": "Genre",
+    "email": "Email",
+    "children": "Enfant(s)",
+    "luckyNumber": "Numéro de porte-bonheur",
+    "favoriteColor": "Couleur préférée",
+    "quality": "Qualité",
+    "sport": "Sport",
+    "rank": "Classement",
+    "position": "Poste"
+
 }

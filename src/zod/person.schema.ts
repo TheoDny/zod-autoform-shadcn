@@ -39,6 +39,7 @@ const usePersonSchema = () => {
             gender: z.enum(Genders, {
                 errorMap: () => ({ message: t("validation.gender_required") }),
             }),
+            email: z.string().email({ message: t("validation.email_invalid") }),
             children: z
                 .array(
                     z.object({
@@ -57,7 +58,6 @@ const usePersonSchema = () => {
                 .int()
                 .min(1, { message: t("validation.luckyNumber_too_low") })
                 .max(9, { message: t("validation.luckyNumber_too_hight") }),
-            email: z.string().email({ message: t("validation.email_invalid") }),
             favoriteColor: z.enum(Colors, {
                 errorMap: () => ({ message: t("validation.favoriteColor_required") }),
             }),
