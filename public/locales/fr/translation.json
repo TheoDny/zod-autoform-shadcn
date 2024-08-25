@@ -1,0 +1,30 @@
+{
+    "validation": {
+        "firstname_required": "Le prénom est obligatoire",
+        "firstname_too_long": "Le prénom est trop long",
+        "lastname_required": "Le nom de famille est obligatoire",
+        "lastname_too_long": "Le nom de famille est trop long",
+        "luckyNumber_too_low": "Le numéro de chance doit être supérieur à 0",
+        "luckyNumber_too_hight": "Le numéro de chance doit être inférieur à 9",
+        "gender_required": "Le genre doit être 'Homme', 'Femme' ou 'Autre'",
+        "email_required": "L'email est obligatoire",
+        "favoriteColor_required": "La couleur préférée est obligatoire",
+        "quality_min_required": "Au moins une qualité est requise",
+        "quality_required": "La qualité est obligatoire"
+    },
+    "color": {
+        "red": "Rouge",
+        "green": "Vert",
+        "blue": "Bleu",
+        "yellow": "Jaune",
+        "purple": "Violet",
+        "orange": "Orange",
+        "pink": "Rose",
+        "brown": "Marron",
+        "gray": "Gris",
+        "black": "Noir",
+        "white": "Blanc",
+        "cyan": "Cyan",
+        "magenta": "Magenta"
+    }
+}
